@@ -1,0 +1,215 @@
+@import "./reset.css";
+
+.fancybox-slide.watermark .fancybox-spaceball {
+    background-image: url('http://fancyapps.com/GJbkSPU.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    box-sizing: border-box;
+    border: 5px solid greenyellow;
+    margin: 0 auto;
+}
+
+
+header {
+    background: url(../images/home-background.jpg) no-repeat center top / cover;
+    padding-bottom: 260px;
+}
+
+body {
+    font-family: "MRobotoSlab Regular", sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+    background-color: #fff;
+    color: #555555;
+}
+
+.container {
+    width: 1140px;
+    
+    border: 5px solid red;
+    margin: 0 auto;
+}
+
+.logo {
+margin-top: 40px;
+}
+
+nav {
+    float: right;
+    margin-top: 46px;
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.menu li {
+    float: left;
+    display: block;
+    margin-right: 35px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 8px;
+    
+}
+h1{
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 270px;
+    
+
+}
+.titles_first {
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 35px;
+}
+.button {
+    background: url(../images/bg_button.png);
+    color: white;
+    border: 3px;
+    border-radius: 3px;
+    border-color: white;
+    border-style: solid;
+    display: block;
+    width: 170px;
+    padding: 20px 0;
+    margin: 0 auto;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 11px;
+    margin-top: 55px;
+}
+
+.title {
+    margin-top: 100px;
+
+}
+
+/*servises*/
+
+.title h2 {
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+.title p {
+    color: #555555;
+    text-align: center;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.services {
+    margin-top: 80px;
+}
+
+
+.services__item {
+    width: 365px;
+    float: left;
+    text-align: center;
+}
+
+.services__item h3 {
+    font-size: 10px;
+    color: #808080;
+    margin-bottom: 5px;
+}
+.services__item p {
+    font-size: 7px;
+    color:#808080;
+    line-height: 1.6em;
+}
+.services__item:last-child{
+    float: right;
+}
+.services__item:nth-child(2){
+    margin-left: 10px;
+}
+
+.services {
+    padding-bottom: 160px;
+}
+
+/* about us*/
+.about {
+    background: url(../images/about_bg.png) no-repeat center top / cover;
+    padding-bottom: 260px;
+}
+
+.about_us_r {
+    width: 365px;
+    float: right;
+    text-align: left;
+    margin-right: 50px;
+    padding: 20px;
+    
+}
+
+.about_us_l {
+    width: 365px;
+    float: left;
+    text-align: left;
+    margin-left: 50px;
+    padding: 20px;
+}
+/*.img_l {
+    float: left;
+}
+.img_r {
+    float: right;
+}
+
+/*Latest works*/
+
+.latest{
+    margin-top: 50px;
+}
+
+.menu-latest {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.menu_li-latest {
+    position: absolute;
+    float: left;
+    margin-left: 420px;
+}
+
+.menu-a {
+    color: rgb(12, 11, 11);
+    text-decoration: none;
+    font-size: 8px;
+}
+
+/*do yuo*/
+
+.do_you {
+    background: url(../images/hands_bg.jpg) no-repeat center top / cover;
+    padding-bottom: 260px;
+}
