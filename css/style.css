@@ -1,5 +1,54 @@
 @import "./reset.css";
 
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Hairline'), local('Montserrat-Hairline'), url('../fonts/montserrat/montserrathairline.woff2') format('woff2'), url('../fonts/montserrat/montserrathairline.woff') format('woff'), url('../fonts/montserrat/montserrathairline.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat'), local('Montserrat-Regular'), url('../fonts/montserrat/montserrat.woff2') format('woff2'), url('../fonts/montserrat/montserrat.woff') format('woff'), url('../fonts/montserrat/montserrat.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Bold'), local('Montserrat-Bold'), url('../fonts/montserrat/montserratbold.woff2') format('woff2'), url('../fonts/montserrat/montserratbold.woff') format('woff'), url('../fonts/montserrat/montserratbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Black'), local('Montserrat-Black'), url('../fonts/montserrat/montserratblack.woff2') format('woff2'), url('../fonts/montserrat/montserratblack.woff') format('woff'), url('../fonts/montserrat/montserratblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Slab';
+    src: local('Roboto Slab Thin'), local('RobotoSlab-Thin'), url('../fonts/robotoslab/robotoslabthin.woff2') format('woff2'), url('../fonts/robotoslab/robotoslabthin.woff') format('woff'), url('../fonts/robotoslab/robotoslabthin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Slab';
+    src: local('Roboto Slab Light'), local('RobotoSlab-Light'), url('../fonts/robotoslab/robotoslablight.woff2') format('woff2'), url('../fonts/robotoslab/robotoslablight.woff') format('woff'), url('../fonts/robotoslab/robotoslablight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Slab';
+    src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url('../fonts/robotoslab/robotoslabregular.woff2') format('woff2'), url('../fonts/robotoslab/robotoslabregular.woff') format('woff'), url('../fonts/robotoslab/robotoslabregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Slab';
+    src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url('../fonts/robotoslab/robotoslabbold.woff2') format('woff2'), url('../fonts/robotoslab/robotoslabbold.woff') format('woff'), url('../fonts/robotoslab/robotoslabbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
 .fancybox-slide.watermark .fancybox-spaceball {
     background-image: url('http://fancyapps.com/GJbkSPU.png');
     background-size: cover;
@@ -7,6 +56,10 @@
   }
 
 body {
+    font-family: "Montserrat", normal;
+    font-size: 40px;
+    overflow-x: hidden;
+    background-color: #fff;
     padding: 0;
     margin: 0;
 }
@@ -133,6 +186,50 @@ h1{
     text-align: center;
 }
 
+a.icon {
+    background: url(../images/a-icon.png); 
+    display: block; 
+    width: 91px; 
+    height: 90px;
+    margin-left: 126px;
+    padding: 0px;
+    
+}
+
+a.icon:hover {
+    background-position: 0 2px;
+}
+
+.fa-icon {
+    background: url(../images/fa-icon.png); 
+    display: block; 
+    width: 95px; 
+    height: 90px; 
+    margin-left: 126px;
+    padding: 0px;
+    
+}
+
+.fa-ikon:hover {
+    background-position: 0 2px;
+}
+
+.fa-support {
+    background: url(../images/fa-support.png); 
+    display: block; 
+    width: 91px; 
+    height: 90px; 
+    margin-left: 126px;
+    padding: 0px;
+    
+}
+
+.fa-support:hover {
+    background-position: 0 2px;
+}
+
+
+
 .services__item h3 {
     font-size: 10px;
     color: #808080;
@@ -161,26 +258,45 @@ h1{
 }
 
 .about_us_r {
-    width: 365px;
+    width: 550px;
     float: right;
     text-align: left;
-    margin-right: 50px;
-    padding: 20px;
+    margin-left: 0;
+    padding: 40px;
     
 }
 
 .about_us_l {
-    width: 365px;
+    width: 550px;
     float: left;
     text-align: left;
-    margin-left: 50px;
-    padding: 20px;
+    margin-left: 0;
+    padding: 40px;
 }
-/*.img_l {
-    float: left;
+
+.slaider_foto {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
 }
-.img_r {
-    float: right;
+
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: #555555;
+    border: navy;
+    outline: none;
+    background: transparent;
 }
 
 /*Latest works*/
@@ -207,9 +323,91 @@ h1{
     font-size: 8px;
 }
 
+#grid { 
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0,5vw;
+    }
+  #grid > a {
+    margin: 5px;
+    font-size: 1px;
+    padding: 1px;
+    background: gold;
+    text-align: center;
+  }
 /*do yuo*/
 
-.do_you {
+.do you like {
     background: url(../images/hands_bg.jpg) no-repeat center top / cover;
     padding-bottom: 260px;
+    
+}
+
+/*Get in touch*/
+.flex {
+    display: flex;
+}
+
+.box{
+    font-size:0px;
+    padding:px;
+    width:0px;
+    
+ }
+ .adress {
+     flex-direction: column; 
+     margin-right: 30px;
+     padding: 20px;
+     
+ }
+ .your_subject {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px; /* макс ширина */
+	margin: 0 auto; /* выровняем по центру */
+ }
+
+ .item{
+	flex:1 1 calc(33.33% - 30px); /* отнимем margin и скажем растягиваться */
+	margin:5px;
+	box-sizing:border-box; /* чтобы внутренний отступ не влиял когда там будет текст... */
+	min-width:170px; /* мин. ширина блока, чтобы переносились на другой ряд */
+}
+
+ .cont {
+    
+    border:3px solid black;
+    flex-direction:row;
+    flex-wrap:wrap;
+    margin-left: 40px;
+ }
+
+ .button_send {
+    background: url(../images/bg_button.png);
+    color: #555555;
+    border: 3px;
+    border-radius: 3px;
+    border-color: #555555;
+    border-style: solid;
+    display: block;
+    width: 170px;
+    padding: 20px 0;
+    margin: 0 auto;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 11px;
+    margin-top: 55px;
+}
+.message {
+    padding: 0;
+    margin-left: 0;
+}
+input:invalid:not(:placeholder-shown) {
+    border-color: red;
+}
+input:valid:not(:placeholder-shown) {
+    border-color: green;
 }
