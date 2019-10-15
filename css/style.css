@@ -338,11 +338,30 @@ a.icon:hover {
   }
 /*do yuo*/
 
-.do you like {
+.image-cont {
     background: url(../images/hands_bg.jpg) no-repeat center top / cover;
-    padding-bottom: 260px;
-    
+    padding-bottom: 0px;
+    position: absolute;
+    display: inline-block;
 }
+
+.image-cont .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: rgb(255, 255, 255);
+}
+.image-cont:hover .after {
+    display: block;
+    background: rgba(196, 9, 9, 0.411);
+}
+
+
+
+
 
 /*Get in touch*/
 .flex {
