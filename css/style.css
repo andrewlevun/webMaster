@@ -30,6 +30,7 @@ body {
 
 .bg {
     background: url(../images/home-background.jpg) no-repeat center top / cover;
+    height: 100vh;
 }
 
 header {
@@ -40,9 +41,9 @@ header {
 
 
 .container {
-    width: 1140px;
+    width: 80vw;
     margin: 0 auto;
-    border: 1px solid rgb(177, 169, 169);
+    /*border: 1px solid rgb(177, 169, 169);*/
     
 }
 
@@ -111,7 +112,12 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     margin-top: 55px;
-    margin-bottom: 350px;
+    
+    /*margin-bottom: 350px;*/
+}
+
+.welcom {
+    margin-bottom: 100px;
 }
 
 .title {
@@ -122,6 +128,7 @@ h1 {
 /*servises*/
 
 .title h2 {
+    
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: bold;
