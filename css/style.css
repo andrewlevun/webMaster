@@ -2,33 +2,110 @@
 
 
 
-.fancybox-slide.watermark .fancybox-spaceball {
-    background-image: url('http://fancyapps.com/GJbkSPU.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
 
-body {
-    max-width: 125%;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Roboto Slab', serif;
-    overflow-x: hidden;
-    background-color: #fff;
-    padding: 0;
-    margin: 0;
+
+div {
+    box-sizing: border-box;
+    
+    margin: 0 auto;
+}
+ 
+
+
+/*heder*/
+
+.nav-link, .navbar-brand { 
+    color: #f4f4f4; cursor: pointer;
+    margin-top: 20px;
+    padding: 0rem orem;
+
 }
 
-/*div {
-    box-sizing: border-box;
-    border: 1px solid greenyellow;
+.nav-link { 
+    margin-right: 0em;
+}
+.nav-link:hover { 
+    background: #f4f4f4; color: #f97300; 
+}
+
+.navbar-toggler {  
+    background:#fff;
+}
+.navbar-collapse {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+   }
+
+.bg {
+    background: url(../images/home-background.jpg) no-repeat center top / cover;
+    height: 100vh;
+}
+
+
+
+
+.container {
+    max-width: 1440px;
     margin: 0 auto;
-}*/
- 
+    
+    
+}
+
+.header li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+.logo-startap {
+    margin-top: 28px;
+}
+
+.titles h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.titles_first {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.button {
+    color: white;
+    border: 2px;
+    border-radius: 3px;
+    border-color: white;
+    border-style: solid;
+    display: block;
+    width: 180px;
+    padding: 11px 0;
+    margin: 0 auto;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin-top: 55px;
+}
+
 h2 {
     font-size: 30px;
     position: relative;
     text-align: center;
-  }
+}
 
 h2::after {
     content: "";
@@ -40,197 +117,90 @@ h2::after {
     background-color: #000;
     right: 0;
     margin: 0 auto;
-    display block;
-  }
-
-/*heder*/
-
-.bg {
-    background: url(../images/home-background.jpg) no-repeat center top / cover;
-    height: 100vh;
-}
-
-header {
-   
-    padding-bottom: 0px;
-}
-
-
-
-.container {
-    max-width: 1140px;
-    margin: 0 auto;
-    /*border: 1px solid rgb(177, 169, 169);*/
     
 }
 
-.logo-startap {
-margin-top: 28px;
-
-}
-nav {
-    float: right;
-    margin-top: 40px;
-}
-
-.menu {
-    padding: 0;
-    margin: 0;
-    display: block;
-}
-
-.menu li {
-    float: left;
-    display: block;
-    margin-right: 35px;
-}
-
-.menu li a {
-    color: #fff;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-}
-
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 36px;
-    font-weight: bold;
-    color: #fff;
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 200px;
-    
-
-}
-.titles_first {
-    font-family: 'Roboto Slab', serif;
-    font-size: 14px;
-    color: #fff;
-    text-align: center;
-    margin-top: 30px;
-}
-
-.button {
-    background: url(../images/bg_button.png);
-    color: white;
-    border: 2px;
-    border-radius: 3px;
-    border-color: white;
-    border-style: solid;
-    display: block;
-    width: 170px;
-    padding: 20px 0;
-    margin: 0 auto;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    margin-top: 55px;
-    
-    /*margin-bottom: 350px;*/
-}
-
-.welcom {
-    margin-bottom: 100px;
-}
-
-.title {
-    margin-top: 100px;
-
-}
-
-/*servises*/
-
-.title h2 {
-    
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 0px;
-}
-
-.title p {
-    color: #555555;
-    text-align: center;
-    font-family: 'Roboto Slab', serif;
-    font-size: 11px;
-    margin-top: 5px;
-}
-
-.services {
-    margin-top: 80px;
-}
-
-.wrapper {
+/*services*/
+.col img {
     margin-top: 20px;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.wrapper h3 {
+.col h2 {
+    text-transform: uppercase;
+    font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    font-weight: bold;
     text-align: center;
-    text-transform: uppercase;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    line-height: 2;
 }
 
-.wrapper img {
-    margin-left: 150px;
-    margin-top: 50px;
-}
-
-.wrapper p {
-    font-family: 'Roboto Slab', serif;
-    font-size: 12px;
+.col h3 {
     text-align: center;
-    line-height: 20px;
-    margin-top: 0px;
-    padding-bottom: 10px;
+    padding-bottom: 20pх;
 }
 
-/* about us*/
+  .row p {
+    text-align: center;
+}
+  
+.titles {
+    
+   
+    margin-top: px;
+}
+ 
+.titles h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 3;
+}
+
+.titles p {
+    text-align: center;
+    line-height: 3;
+}
+
+/*About us*/
 .about-bg {
     background-color: #f8f8f8;
     padding-bottom: 0px;
 }
 
-.about_us {
-    margin-top: 20px;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 40px;
-}
-.about_us p {
-    font-family: 'Roboto Slab', serif;
-    text-align: left;
-    line-height: 20px;
-    margin-top: 0px;
-    margin-bottom: 75px;
-    margin-top: 75px;
-}
 
-.about_name {
-    color: #555555;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    padding-bottom: 20px;
-}
 
-.slick-prev,
-.slick-next {
-  position: absolute;
+/*slider*/
+.carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+   }
+   .carousel-control {
+    left: -12px;
+   }
+   .carousel-control.right {
+    right: -12px;
+   }
+   .carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-right: -19px;
+   }
+   .carousel-indicators li {
+    background: #c0c0c0;
+   }
+   .carousel-indicators .active {
+   background: #333333;
+   }
+
+   .carousel-control {
+    position: absolute;
   top: 45%;
   height: 50px;
   width: 45px;
@@ -240,21 +210,13 @@ h1 {
   justify-content: center;
   text-align: center;
   background: rgba(0, 0, 0, .5);
-  transform: translateY(-50%);
+  transform: translateY(220%);
 }
 
-.slick-next {
-    right: 12px;
-}
 
-.slick-prev {
-    left: 1px;
-}
 
-/*Latest works*/
-.latest-works {
 
-}
+/*la test*/
 #latest {
     margin-bottom: 80px;
     text-align: center;
@@ -285,28 +247,16 @@ ul#latest li {
 }
 
 
+/*galery*/
+.work-grid img{
+    padding: 2px;
+   }
+   .work-grid img:hover {
+    opacity: 0.6;
+   }
 
-
-
-
-
-
-#grid { 
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0,5vw;
-    }
-  #grid > a {
-    margin: 5px;
-    font-size: 1px;
-    padding: 1px;
-    background: #f8f8f8;
-    text-align: center;
-}
-/*do you*/
-
-.bg-do-you {
+ /*do you*/
+ .bg-do-you {
     background: url(../images/hands_bg.jpg) no-repeat center top / cover;
     padding-bottom: 260px;
 }
@@ -336,7 +286,7 @@ ul#latest li {
     border-style: solid;
     display: block;
     width: 170px;
-    padding: 20px 0;
+    padding: 12px 0;
     margin: 0 auto;
     text-decoration: none;
     text-align: center;
@@ -349,39 +299,14 @@ ul#latest li {
     margin-bottom: 0px;
 }
 
-
-
-
-
-
-/*recent blog post*/
-.recent-blog h2 {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    font-size: 16px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
-.recent-blog p {
-    text-align: center;
-    font-family: 'Roboto Slab', serif;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    
-}
-
-.recent {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
    
-    grid-column-gap: 5px;
-    grid-row-gap: 80px;
-    
-}
 
-.float {
+
+
+
+   /*recent blog post*/
+
+   .float {
     float: left;
     margin-right: 40px;
 }
@@ -405,7 +330,6 @@ ul#latest li {
     line-height: 2.0;
 
 }
-
 
 /*client*/
 .client {
@@ -431,27 +355,27 @@ ul#latest li {
 
 
 
-.client_1 {
+.col_1 {
     margin-top: 23px;
     margin-left: 60px;
 }
 
-.client_2 {
+.col_2 {
     margin-top: 3px;
     margin-left: 60px;
 }
 
-.client_3 {
+.col_3 {
     margin-top: 26px;
     margin-left: 60px;
 }
 
-.client_4 {
+.col_4 {
     margin-top: 13px;
     margin-left: 60px;
 }
 
-.client_5 {
+.col_5 {
     margin-top: 15px;
     margin-left: 60px;
 }
@@ -471,7 +395,9 @@ ul#latest li {
     font-weight: 600;
 }
 
-/*get in touch*/
+
+/*Get in touch*/
+
 .get-in p {
     font-family: 'Roboto Slab';
     font-style: italic;
@@ -551,7 +477,6 @@ ul#latest li {
 
 
 /*footer*/
-
 .wrapper-futer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
