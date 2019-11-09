@@ -1,12 +1,16 @@
 @import "./reset.css";
 
+@media only screen and (max-width : 480px)
+	.carousel-control.left, .carousel-control.right
+		display: none;
+
 
 
 
 
 div {
     box-sizing: border-box;
-    
+    border: 1px solid greenyellow;
     margin: 0 auto;
 }
  
@@ -49,7 +53,7 @@ div {
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    
+    border: 1px solid rgb(206, 28, 28);
     
 }
 
@@ -176,6 +180,95 @@ h2::after {
 
 
 /*slider*/
+
+    .carousel-indicators,
+    .carousel-indicators li {
+         padding-top: 0;
+        padding-bottom: 0;
+}
+  
+  
+
+.cool-xc-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 0px;
+    padding-left: 2px;
+}
+
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 100%;
+}
+
+/* 1. */
+.carousel-control,
+.carousel-control:hover {
+  filter: none;
+  opacity: 1;
+  text-shadow: none;
+}
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+
+/* 2. */
+.carousel-control .menu_left,
+.carousel-control .menu_right {
+  background-color: #8e8e8e;
+  font-size: 16px;
+  height: 32px;
+  line-height: 32px;
+  margin-top: 110px;
+  width: 32px;
+}
+.carousel-control .menu_left {
+  left: 10px;
+  margin-left: -130px;
+}
+.carousel-control .menu_right {
+  right: 10px;
+  margin-right: -130px;
+}
+.carousel-control:hover .menu_left,
+.carousel-control:hover .menu_right {
+  background-color: rgba(212, 82, 85, 0.5);
+}
+
+/* 3. */
+@media (min-width: 768px) {
+  .carousel-control .menu_left,
+  .carousel-control .menu_right {
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;  
+    margin-top: 110px;
+    width: 50px;
+}
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 60px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 1px;
+    color: #fff;
+    text-align: center;
+}
+
+/*
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+    right: 8%;
+    margin-right: -10px;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+}
+
 .carousel {
     margin-bottom: 0;
     padding: 0 40px 30px 40px;
@@ -199,19 +292,39 @@ h2::after {
    background: #333333;
    }
 
-   .carousel-control {
+   .right carousel-control {
     position: absolute;
-  top: 45%;
-  height: 50px;
-  width: 45px;
-  z-index: 1;
-  cursor: pointer;
-  opacity: 0.5;
-  justify-content: center;
-  text-align: center;
-  background: rgba(0, 0, 0, .5);
-  transform: translateY(220%);
+    top: 45%;
+    height: 50px;
+    width: 45px;
+    z-index: 3;
+    cursor: pointer;
+    opacity: 0.5;
+    border: 0;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, .5);
+    transform: translateY(220%);
 }
+
+.carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    background-color: rgba(0,0,0,0);
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+*/
 
 
 
@@ -326,6 +439,13 @@ ul#latest li {
 }
 
 .recent-blog p {
+    font-family: 'Roboto Slab', regular;
+    font-size: 12px;
+    line-height: 2;
+    font-weight: ;
+    font-weight: 300;
+    
+    margin-top: 100px;
     text-align: left;
     line-height: 2.0;
 
@@ -398,41 +518,21 @@ ul#latest li {
 
 /*Get in touch*/
 
-.get-in p {
-    font-family: 'Roboto Slab';
-    font-style: italic;
-    font-size: 14px;
-    text-align: center;
-    line-height: 2.0;
+.get-in img {
+    float: left;
+    margin-top: 10px;
+    margin-right: 4px;
 }
-#outer-grid {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-rows: ;
-    grid-template-columns: 300px auto;
-    grid-template-columns: ;
-    grid-gap: 8px;
-    }
-    #outer-grid > div {
-    
-    
-    font-size: 4vw;
-    padding: 8px;
-    }
-    #inner-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 5px;
-    }
-    #inner-grid > div {
-   
-    padding: 8px;
-    }
+
+.get-in p {
+    text-align: left;
+}
 
 .form-block input, .form-block textarea {
     background: #ffffff;
     border: 1px solid #e6e6ec;
     line-height: 45px;
+    min-width: 350px;
     height: 44px;
     padding-left: 22px;
     padding-right: 22px;
@@ -446,7 +546,8 @@ ul#latest li {
 }
 
 .form-block textarea {
-    min-height: 192px;
+    min-height: 100px;
+    min-width: 730px;
     resize: none;
     margin-bottom: 20px;
 }
@@ -463,6 +564,26 @@ ul#latest li {
     display: block;
     font-weight: 700;
     height: 44px;
+}
+
+
+.button_get {
+    color: rgb(26, 24, 24);
+    border: 2px;
+    border-radius: 3px;
+    border-color: rgb(22, 21, 21);
+    border-style: solid;
+    display: block;
+    width: 180px;
+    padding: 11px 0;
+    margin: 0 auto;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin-top: 55px;
 }
 
 
@@ -496,4 +617,15 @@ ul#latest li {
     text-align: center;
     line-height: 4.0;
     font-weight: 600;
+}
+
+.get-in h6 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-align: left;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    line-height: 2;
 }
