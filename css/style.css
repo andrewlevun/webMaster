@@ -1,27 +1,68 @@
 @import "./reset.css";
 
 @media only screen and (max-width : 480px)
-	.carousel-control.left, .carousel-control.right
+    .carousel-control.left, 
+    .carousel-control.right {
 		display: none;
+}
 
-
-
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    
+}
 
 
 div {
     box-sizing: border-box;
-    border: 1px solid greenyellow;
+   
     margin: 0 auto;
 }
  
 
 
 /*heder*/
+.bg {
+    background: url(../images/home-background.jpg) no-repeat center top / cover;
+    height: 100vh;
+}
+
+.logo-startap {
+    margin-top: 28px;
+}
+
+.nav {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+}
+
+.navbar-nav {
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: flex-end;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 20px;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.menu a {
+    display: block; /* ссылка растягивается на весь пункт li */
+
+        padding: 5px 15px; /* задаем внутренние отступы */
+
+        color: #fff; /* цвет текста */
+
+        text-decoration: none; /* убрать нижнее подчёркивание у ссылок */
+}
 
 .nav-link, .navbar-brand { 
     color: #f4f4f4; cursor: pointer;
     margin-top: 20px;
-    padding: 0rem orem;
+    padding: 0rem 0rem;
 
 }
 
@@ -42,31 +83,19 @@ div {
     justify-content: flex-end;
    }
 
-.bg {
-    background: url(../images/home-background.jpg) no-repeat center top / cover;
-    height: 100vh;
-}
-
-
-
-
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-    border: 1px solid rgb(206, 28, 28);
-    
-}
 
 .header li a {
     color: #fff;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
+    font-size: 20px;
 }
 
-.logo-startap {
-    margin-top: 28px;
-}
+
+
+
+
+
 
 .titles h1 {
     font-family: 'Montserrat', sans-serif;
@@ -173,28 +202,32 @@ h2::after {
 
 /*About us*/
 .about-bg {
-    background-color: #f8f8f8;
+    background-color: #f8f8f8 no-repeat center top / cover;
     padding-bottom: 0px;
 }
 
 
 
 /*slider*/
+.well_car {
+    min-height: 20px;
+    padding: 0px;
+    margin-bottom: 0px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+}
 
-    .carousel-indicators,
-    .carousel-indicators li {
-         padding-top: 0;
-        padding-bottom: 0;
+.carousel-indicators,
+.carousel-indicators li {
+     padding-top: 0;
+    padding-bottom: 0;
 }
   
   
 
-.cool-xc-12 {
-    position: relative;
-    min-height: 1px;
-    padding-right: 0px;
-    padding-left: 2px;
-}
 
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
 
@@ -207,7 +240,7 @@ h2::after {
 .carousel-control,
 .carousel-control:hover {
   filter: none;
-  opacity: 1;
+  opacity: 0,1;
   text-shadow: none;
 }
 .carousel-control.left,
@@ -569,13 +602,13 @@ ul#latest li {
 
 .button_get {
     color: rgb(26, 24, 24);
-    border: 2px;
+    border: 1px;
     border-radius: 3px;
-    border-color: rgb(22, 21, 21);
+    border-color: #555555;
     border-style: solid;
     display: block;
     width: 180px;
-    padding: 11px 0;
+    padding: 2px 0;
     margin: 0 auto;
     text-decoration: none;
     text-align: center;
@@ -586,29 +619,31 @@ ul#latest li {
     margin-top: 55px;
 }
 
+/*footer*/
 
 
-
- .block {
-    text-align: center;  /* выравнивание заголовка по центру обертки */
-    width: 80%;          /* ширина обертки. На самом деле для фиксированной верстки можно использовать и px, но лучше сразу адаптировать под разные устройства, т.к. это, что называется, тренди :-) */
-    margin: 0 auto;      /* выравнивание обертки по центру документа */
-    overflow: hidden;    /* прячем линии за границами обертки, чтобы в случае изменения ширины экрана линии не выходили за ее пределы */
+#twitter {
+    margin-top: 100px;
+    margin-bottom: 25px;
+    text-align: center;
 }
 
+ul#twitter li {
+    display:inline-block;
+    
+    
+}
 
-/*footer*/
-.wrapper-futer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 50px 50px 50px 50px 50px;
-    grid-auto-rows: 40px;
-    justify-content: center;
+#twitter li {
+    margin-left: 1px;
+    display: inline-block;
+    text-align:;
 }
 
 .bg-footer {
     background-color: #c0301c;
-    padding-bottom: 260px;
+    padding-bottom: 0px;
+    height: 35vh;
 }
 
 .foot h5 {
@@ -628,4 +663,9 @@ ul#latest li {
     margin-left: 0px;
     margin-bottom: 0px;
     line-height: 2;
+}
+@media (min-width: 768px)
+#twitter {
+    margin-bottom: 0px;
+    text-align: center;
 }
