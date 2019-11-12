@@ -9,13 +9,13 @@
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    border: 1px solid rgb(206, 28, 28);
+   
 }
 
 
 div {
     box-sizing: border-box;
-    border: 1px solid greenyellow;
+   
     margin: 0 auto;
 }
  
