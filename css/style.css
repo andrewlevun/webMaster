@@ -849,6 +849,7 @@ ul#latest li {
     margin-top: 13px;
     margin-left:300px;
     margin-right: 0px;
+    margin-bottom: 50px;
 }
 
 .button_get:hover {
@@ -900,7 +901,7 @@ ul#twitter li {
     background-size: cover;      
 }
 
-@media only screen and (max-width: 767px) {   
+@media only screen and (max-width: 200px) {   
     bg-footer {background-color: #c0301c; }
  }
 
