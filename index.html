@@ -4,53 +4,71 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./css/style.css">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/fonts.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./js/js.js">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <title>startup</title>
 </head>
 
 <body>
-    <section class="bg">
+    <section class="home" id="home">
+        <header>
+            <div class="container">
+                <a href="#"><img src="./images/logo.png" alt="Startap" class=""></a>
+                <div class="nav_icon"></div>
+                <nav class="navbar navbar-expand-lg fixed-top ">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-4">
+                            <li class="nav-item">
+                                <a class="nav-link" data-value="about" href="#home">Home</a> </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-value="about" href="#services">Services</a> </li>
+                            <li class="nav-item">
+                                <a class="nav-link " data-value="portfolio" href="#about">About</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link " data-value="blog" href="#latest">Works</a> </li>
+                            <li class="nav-item">
+                                <a class="nav-link " data-value="team" href="#blog">Blog</a> </li>
+                            <li class="nav-item">
+                                <a class="nav-link " data-value="contact" href="#client">Clients</a> </li>
+                            <li class="nav-item">
+                                <a class="nav-link " data-value="contact" href="#contact">Contact</a> </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
         <div class="container">
-            <header>
-                <div class="row">
-                        <div class="col-2">
-                        <nav class="navbar navbar-expand-lg nav">
-                            <img src="./images/logo.png" alt="Startap" class="logo-startap">
-                        </div>
-                        <div class="col-9 menu-bar">
-                            <ul id="menu">
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#works">Works</a></li>
-                            <li><a href="#blog">Blog</a></li>
-                            <li><a href="#client">Clients</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                            </ul>
-                        </div>
-                        </nav>
+
+            <div class="welcom">
+                <div class="titles_first">
+                    <a name="home"></a>
+                    <h1>welcome to startup</h1>
+
+                    <p>Your Favourite Creative Agency Template</p>
                 </div>
-            </header>
-            
-                <div class="welcom">
-                    <h1><a name="home"></a>welcome to startup</h1>
-                    <div class="titles_first">
-                        <p>Your Favourite Creative Agency Template</p>
-                    </div>
-                    <div>
-                        <a class="button" href="#">get started</a>
-                    </div>
-                </div>
-        </div>
+                <a class="button" href="#">get started</a>
             </div>
         </div>
     </section>
@@ -62,8 +80,9 @@
             <div class="row">
 
                 <div class="titles">
-                <a name="services"></a>
-                    <h2><a name="sevices"></a>Services</h2>
+                    <a name="services"></a>
+
+                    <h2>Services</h2>
 
                     <p>We offer ipsum dolor sit amet, consetetur sadipscing elitr amet
                     </p>
@@ -77,13 +96,15 @@
                         inventore harum ex magni, dicta impedit. Lorem ipsum.
                     </p>
                 </div>
-                <div class="col"><img src="./images/fa-icon.png" alt="a-ikon">
+                <div class="col">
+                    <img src="./images/fa-icon.png" alt="a-ikon">
                     <h3>expert support</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo
                         inventore harum ex magni, dicta impedit. Lorem ipsum.
                     </p>
                 </div>
-                <div class="col"><img src="./images/fa-support.png" alt="a-ikon">
+                <div class="col">
+                    <img src="./images/fa-support.png" alt="a-ikon">
                     <h3>clean typography</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo
                         inventore harum ex magni, dicta impedit. Lorem ipsum.
@@ -96,11 +117,12 @@
 
     <section class="about bg-about">
         <div class="container">
+            <a name="about"></a>
             <div class="row">
 
                 <div class="titles">
 
-                    <h2><a name="about"></a>About us</h2>
+                    <h2>About us</h2>
 
                     <p>We offer ipsum dolor sit amet, consetetur sadipscing elitr amet
                     </p>
@@ -118,304 +140,140 @@
             </div>
         </div>
     </section>
-    <section class="about bg-about">
+    <section class="about">
         <div class="container">
-            <div class="col-xs-12">
 
-                <div class="well_car">
-                    <div id="myCarousel" class="carousel slide">
-                        <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                        </ol>
-                        <!-- Carousel items -->
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <div class="row">
-                                    <div class="col-md-3"><a href="#x" class="thumbnail"><img class="img-responsive"
-                                                src="./images/laer-12.jpg" width="275" height="260" alt="Image"></a>
-                                        <p>MD. KHALIL UDDIN</p>
-                                        <p>Head of Ideas</p>
-                                            <div class="carousel-caption">
-                                                <ul id="icon">
-                                                    <li><a href="#" class="icon-envelope-o"></a></li>
-                                                    <li><a href="#" class="icon-google-plus"></a></li>
-                                                    <li><a href="#" class="icon-twitter"></a></li>
-                                                    <li><a href="#" class="icon-telegram"></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    <div class="col-md-3"><a href="#x" class="thumbnail"><img class="img-responsive"
-                                                src="./images/laer-13.jpg" width="275" height="260" alt="Image"></a>
-                                        <p>RUBEL MIAH</p>
-                                        <p>Lead WordPress Developer</p>
-                                        <div class="carousel-caption">
-                                            <ul id="icon">
-                                                <li><a href="#" class="icon-envelope-o"></a></li>
-                                                <li><a href="#" class="icon-google-plus"></a></li>
-                                                <li><a href="#" class="icon-twitter"></a></li>
-                                                <li><a href="#" class="icon-telegram"></a></li>
-                                            </ul>
-                                    </div>
-                                    </div>
-                                    <div class="col-md-3"><a href="#x" class="thumbnail"><img class="img-responsive"
-                                                src="./images/laer-15.jpg" width="275" height="260" alt="Image"></a>
-                                        <p>SHAMIL MIA</p>
-                                        <p>Sr. Web Developer</p>
-                                        <div class="carousel-caption">
-                                                <ul id="icon">
-                                                    <li><a href="#" class="icon-envelope-o"></a></li>
-                                                    <li><a href="#" class="icon-google-plus"></a></li>
-                                                    <li><a href="#" class="icon-twitter"></a></li>
-                                                    <li><a href="#" class="icon-telegram"></a></li>
-                                                </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3"><a href="#x" class="thumbnail"><img class="img-responsive"
-                                                src="./images/laer-16.jpg" width="275" height="260" alt="Image"></a>
-                                        <p>JOHN DOE</p>
-                                        <p>Front-end Developer</p>
-                                        <div class="carousel-caption">
-                                                <ul id="icon">
-                                                    <li><a href="#" class="icon-envelope-o"></a></li>
-                                                    <li><a href="#" class="icon-google-plus"></a></li>
-                                                    <li><a href="#" class="icon-twitter"></a></li>
-                                                    <li><a href="#" class="icon-telegram"></a></li>
-                                                </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--/row-->
-                            </div>
-                            <!--/item-->
-                            <div class="item">
-                                <div class="row">
-                                    <div class="col-md-3"><a href="#x" class="thumbnail"><img class="img-responsive"
-                                                src="./images/laer-12.jpg" width="275" height="260" alt="Image"></a>
-                                        <p>MD. KHALIL UDDIN</p>
-                                        <p>Head of Ideas</p>
-                                        <div class="carousel-caption">
-                                                <ul id="icon">
-                                                    <li><a href="#" class="icon-envelope-o"></a></li>
-                                                    <li><a href="#" class="icon-google-plus"></a></li>
-                                                    <li><a href="#" class="icon-twitter"></a></li>
-                                                    <li><a href="#" class="icon-telegram"></a></li>
-                                                </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3"><a href="#x" class="thumbnail"><img class="img-responsive"
-                                                src="./images/laer-13.jpg" width="275" height="260" alt="Image"></a>
-                                        <p>RUBEL MIAH</p>
-                                        <p>Lead WordPress Developer</p>
-                                        <div class="carousel-caption">
-                                                <ul id="icon">
-                                                    <li><a href="#" class="icon-envelope-o"></a></li>
-                                                    <li><a href="#" class="icon-google-plus"></a></li>
-                                                    <li><a href="#" class="icon-twitter"></a></li>
-                                                    <li><a href="#" class="icon-telegram"></a></li>
-                                                </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3"><a href="#x" class="thumbnail"><img class="img-responsive"
-                                                src="./images/laer-15.jpg" width="275" height="260" alt="Image"></a>
-                                        <p>SHAMIL MIA</p>
-                                        <p>Sr. Web Developer</p>
-                                        <div class="carousel-caption">
-                                                <ul id="icon">
-                                                    <li><a href="#" class="icon-envelope-o"></a></li>
-                                                    <li><a href="#" class="icon-google-plus"></a></li>
-                                                    <li><a href="#" class="icon-twitter"></a></li>
-                                                    <li><a href="#" class="icon-telegram"></a></li>
-                                                </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3"><a href="#x" class="thumbnail"><img class="img-responsive"
-                                                src="./images/laer-16.jpg" width="275" height="260" alt="Image"></a>
-                                        <p>JOHN DOE</p>
-                                        <p>Front-end Developer</p>
-                                        <div class="carousel-caption">
-                                                <ul id="icon">
-                                                    <li><a href="#" class="icon-envelope-o"></a></li>
-                                                    <li><a href="#" class="icon-google-plus"></a></li>
-                                                    <li><a href="#" class="icon-twitter"></a></li>
-                                                    <li><a href="#" class="icon-telegram"></a></li>
-                                                </ul>
-                                        </div>
-                                    </div>
-                                </div>   
-                                <!--/row-->
-                            </div>
-                            <!--/item-->
+            <!-- Карусель  -->
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
-                        </div>
-                        <a class="left carousel-control control" href="#myCarousel" role="button" data-slide="prev">
-                            <span class="glyphicon glyphicon-menu-left menu_left" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control control" href="#myCarousel" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-menu-right menu_right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                        <!--/carousel-inner-->
-                        <!--<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                <!-- Индикаторы -->
+                <ol class="carousel-indicators">
+                    <!--
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
+                </ol>
 
-                        <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a> <!-->
-                    </div>
-                    <!--/myCarousel-->
-                </div>
-                <!--/well-->
-
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <div class="titles">
-                <h2><a name="works"></a>Latest Works</h2>
-                <div class="">
-                    <ul id="latest">
-                        <li><a href="#">All</a></li>
-                        <li><a href="#">Brending</a></li>
-                        <li><a href="#">Design</a></li>
-                        <li><a href="#">Development</a></li>
-                        <li><a href="#">Stategi</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section>
-        <div class="container">
-            <div class="">
-                <div class="row">
-                    <div class="col-4 work-grid">
-                        <div class="nivo-lightbox">
-                            <img src="./images/laer-26.jpg" width="" height="250" class="img-responsive block" alt="1"/>
-                            <div class="block">
-                                    <h5>Hair Dresser</h5>
-                                    <h4>Branding</h4>
-                                    <a class="button-view icon-angle-right" href="./images/laer-26.jpg" data-lightbox-gallery="gallery1">view</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-4 work-grid holder">
-                        <div class="nivo-lightbox">
-                            <a href="./images/laer-27.jpg" data-lightbox-gallery="gallery1">
-                                <img src="./images/laer-27.jpg" class="img-responsive work-img-wid" alt="2" />
-                            </a>
-                                <div class="block_inner">
-                                    <h5>Hair Dresser</h5>
-                                    <h4>Branding</h4>
-                                    <a class="button-view icon-angle-right" href="./images/laer-27.jpg" data-lightbox-gallery="gallery1">view</a>
+                <!-- Слайды (картинки) -->
+                <!-- Первое фото -->
+                <div class="row mx-auto my-auto">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="col-lg-3">
+                                <a href="#x" class="thumbnail"><img class="img-responsive" src="./images/laer-12.jpg"
+                                        width="275" height="260" alt="Image"></a>
+                                <p>MD. KHALIL UDDIN</p>
+                                <p>Head of Ideas</p>
+                               
+                                <div class="carousel-caption ">
+                                    <ul id="icon">
+                                        <li><a href="#" class="icon-envelope-o"></a></li>
+                                        <li><a href="#" class="icon-google-plus"></a></li>
+                                        <li><a href="#" class="icon-twitter"></a></li>
+                                        <li><a href="#" class="icon-telegram"></a></li>
+                                    </ul>
                                 </div>
                             </div>
-                    </div>
-
-                    <div class="col-4 work-grid holder">
-                        <div class="nivo-lightbox">
-                            <a href="./images/laer-23.jpg" data-lightbox-gallery="gallery1">
-                                <img src="./images/laer-23.jpg" class="img-responsive work-img-wid" alt="3" />
-                            </a>
                             
-                                    <div class="block_inner">
-                                        <h5>Hair Dresser</h5>
-                                        <h4>Branding</h4>
-                                    <a class="button-view icon-angle-right" href="./images/laer-23.jpg" data-lightbox-gallery="gallery1">view</a>
-                                
+                            <div class="col-lg-3">
+                                <a href="#x" class="thumbnail"><img class="img-responsive" src="./images/laer-13.jpg"
+                                        width="275" height="260" alt="Image"></a>
+                                <p>RUBEL MIAH</p>
+                                <p>Lead WordPress Developer</p>
+                                <div class="carousel-caption">
+                                    <ul id="icon">
+                                        <li><a href="#" class="icon-envelope-o"></a></li>
+                                        <li><a href="#" class="icon-google-plus"></a></li>
+                                        <li><a href="#" class="icon-twitter"></a></li>
+                                        <li><a href="#" class="icon-telegram"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <a href="#x" class="thumbnail"><img class="img-responsive" src="./images/laer-15.jpg"
+                                        width="275" height="260" alt="Image"></a>
+                                <p>SHAMIL MIA</p>
+                                <p>Sr. Web Developer</p>
+                                <div class="carousel-caption">
+                                    <ul id="icon">
+                                        <li><a href="#" class="icon-envelope-o"></a></li>
+                                        <li><a href="#" class="icon-google-plus"></a></li>
+                                        <li><a href="#" class="icon-twitter"></a></li>
+                                        <li><a href="#" class="icon-telegram"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <a href="#x" class="thumbnail"><img class="img-responsive" src="./images/laer-15.jpg"
+                                        width="275" height="260" alt="Image"></a>
+                                <p>SHAMIL MIA</p>
+                                <p>Sr. Web Developer</p>
+                                <div class="carousel-caption">
+                                    <ul id="icon">
+                                        <li><a href="#" class="icon-envelope-o"></a></li>
+                                        <li><a href="#" class="icon-google-plus"></a></li>
+                                        <li><a href="#" class="icon-twitter"></a></li>
+                                        <li><a href="#" class="icon-telegram"></a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col-4 work-grid holder">
-                        <div class="nivo-lightbox">
-                            <a href="./images/laer-21.jpg" data-lightbox-gallery="gallery1">
-                                <img src="./images/laer-21.jpg" class="img-responsive" alt="4" />
-                            </a>
-                            
-                                    <div class="block_inner">
-                                        <h5>Hair Dresser</h5>
-                                        <h4>Branding</h4>
-                                    <a class="button-view icon-angle-right" href="./images/laer-21.jpg" data-lightbox-gallery="gallery1">view</a>
-                            
+                        <div class="item">
+                            <div class="col-lg-3">
+                                <a href="#x" class="thumbnail"><img class="img-responsive" src="./images/laer-15.jpg"
+                                        width="275" height="260" alt="Image"></a>
+                                <p>SHAMIL MIA</p>
+                                <p>Sr. Web Developer</p>
+                                <div class="carousel-caption">
+                                    <ul id="icon">
+                                        <li><a href="#" class="icon-envelope-o"></a></li>
+                                        <li><a href="#" class="icon-google-plus"></a></li>
+                                        <li><a href="#" class="icon-twitter"></a></li>
+                                        <li><a href="#" class="icon-telegram"></a></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="col-4 work-grid holder">
-                        <div class="nivo-lightbox">
-                            <a href="./images/laer-18.jpg" data-lightbox-gallery="gallery1">
-                                <img src="./images/laer-18.jpg" class="img-responsive" alt="5" />
-                            </a>
-                            
-                                    <div class="block_inner">
-                                        <h5>Hair Dresser</h5>
-                                        <h4>Branding</h4>
-                                    <a class="button-view icon-angle-right" href="./images/laer-18.jpg" data-lightbox-gallery="gallery1">view</a>
-                                
+                            <div class="col-lg-3">
+                                <a href="#x" class="thumbnail"><img class="img-responsive" src="./images/laer-15.jpg"
+                                        width="275" height="260" alt="Image"></a>
+                                <p>SHAMIL MIA</p>
+                                <p>Sr. Web Developer</p>
+                                <div class="carousel-caption">
+                                    <ul id="icon">
+                                        <li><a href="#" class="icon-envelope-o"></a></li>
+                                        <li><a href="#" class="icon-google-plus"></a></li>
+                                        <li><a href="#" class="icon-twitter"></a></li>
+                                        <li><a href="#" class="icon-telegram"></a></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="col-4 work-grid holder">
-                        <div class="nivo-lightbox">
-                            <a href="./images/laer-27.jpg" data-lightbox-gallery="gallery1">
-                                <img src="./images/laer-27.jpg" class="img-responsive" alt="6" />
-                            </a>
-                            
-                                    <div class="block_inner">
-                                        <h5>Hair Dresser</h5>
-                                        <h4>Branding</h4>
-                                    <a class="button-view icon-angle-right" href="./images/laer-27.jpg" data-lightbox-gallery="gallery1">view</a>
-                            
+                            <div class="col-lg-3">
+                                <a href="#x" class="thumbnail"><img class="img-responsive" src="./images/laer-15.jpg"
+                                        width="275" height="260" alt="Image"></a>
+                                <p>SHAMIL MIA</p>
+                                <p>Sr. Web Developer</p>
+                                <div class="carousel-caption ">
+                                    <ul id="icon">
+                                        <li><a href="#" class="icon-envelope-o"></a></li>
+                                        <li><a href="#" class="icon-google-plus"></a></li>
+                                        <li><a href="#" class="icon-twitter"></a></li>
+                                        <li><a href="#" class="icon-telegram"></a></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="col-4 work-grid holder">
-                        <div class="nivo-lightbox">
-                            <a href="./images/laer-26.jpg" data-lightbox-gallery="gallery1">
-                                <img src="./images/laer-26.jpg" class="img-responsive" alt="7" />
-                            </a>
-                            
-                                    <div class="block_inner">
-                                        <h5>Hair Dresser</h5>
-                                        <h4>Branding</h4>
-                                    <a class="button-view icon-angle-right" href="./images/laer-26.jpg" data-lightbox-gallery="gallery1">view</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-4 work-grid holder">
-                        <div class="nivo-lightbox">
-                            <a href="./images/laer-24.jpg" data-lightbox-gallery="gallery1">
-                                <img src="./images/laer-24.jpg" class="img-responsive" alt="8" />
-                            </a>
-                            
-                                    <div class="block_inner">
-                                        <h5>Hair Dresser</h5>
-                                        <h4>Branding</h4>
-                                    <a class="button-view icon-angle-right" href="./images/laer-23.jpg" data-lightbox-gallery="gallery1">view</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4 work-grid holder">
-                        <div class="nivo-lightbox">
-                            <a href="./images/laer-23.jpg" data-lightbox-gallery="gallery1">
-                                <img src="./images/laer-23.jpg" class="img-responsive" alt="6" />
-                            </a>
-                            
-                                    <div class="block_inner">
-                                        <h5>Hair Dresser</h5>
-                                        <h4>Branding</h4>
-                                    <a class="button-view icon-angle-right" href="./images/laer-23.jpg" data-lightbox-gallery="gallery1">view</a>
-                                
+                            <div class="col-lg-3">
+                                <a href="#x" class="thumbnail"><img class="img-responsive" src="./images/laer-15.jpg"
+                                        width="275" height="260" alt="Image"></a>
+                                <p>SHAMIL MIA</p>
+                                <p>Sr. Web Developer</p>
+                                <div class="carousel-caption">
+                                    <ul id="icon">
+                                        <li><a href="#" class="icon-envelope-o"></a></li>
+                                        <li><a href="#" class="icon-google-plus"></a></li>
+                                        <li><a href="#" class="icon-twitter"></a></li>
+                                        <li><a href="#" class="icon-telegram"></a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -423,33 +281,210 @@
 
                 </div>
             </div>
+
+            <!-- Боковые стрелки -->
+            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                <span class="glyphicon glyphicon-menu-left menu_left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                <span class="glyphicon glyphicon-menu-right menu_right"></span>
+            </a>
+
+
+
+        </div>
+
+    </section>
+    <a name="latest"></a>
+
+    <section class="latest" id="latest">
+        <div class="container">
+            <div class="titles mybtn">
+                <div id="myBtnContainer">
+                    <h2>Latest Works</h2>
+                    <button class="btn-gal active col-xl-1" onclick="filterSelection('all')">All</button>
+                    <button class="btn-gal col-xl-1" onclick="filterSelection('brending')">Brending</button>
+                    <button class="btn-gal col-xl-1" onclick="filterSelection('design')">Design</button>
+                    <button class="btn-gal col-xl-1" onclick="filterSelection('development')">Development</button>
+                </div>
+            </div>
+
+            <!-- Portfolio Gallery Grid -->
+            <div class="row">
+                <div class="column brending work-grid show">
+                    <div class="content nivo-lightbox holder">
+                        <a href="./images/laer-20.jpg" width="" height="" data-lightbox-gallery="gallery1">
+                            <img src="./images/laer-20.jpg" width="470" height="400" class="img-responsive work-img-wid"
+                                alt="1" />
+                        </a>
+                        <div class="block_inner">
+                            <h5>Hair Dresser</h5>
+                            <h4>Branding</h4>
+                            <a class="button-view icon-angle-right" href="./images/laer-20.jpg"
+                                data-lightbox-gallery="gallery1">view</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column brending work-grid show">
+                    <div class="content nivo-lightbox holder">
+                        <a href="./images/laer-26.jpg" data-lightbox-gallery="gallery1">
+                            <img src="./images/laer-26.jpg" width="470" height="400" class="img-responsive work-img-wid"
+                                alt="1" />
+                        </a>
+                        <div class="block_inner">
+                            <h5>Hair Dresser</h5>
+                            <h4>Branding</h4>
+                            <a class="button-view icon-angle-right" href="./images/laer-26.jpg"
+                                data-lightbox-gallery="gallery1">view</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column brending work-grid show">
+                    <div class="content nivo-lightbox holder">
+                        <a href="./images/laer-21.jpg" data-lightbox-gallery="gallery1">
+                            <img src="./images/laer-21.jpg" width="470" height="400" class="img-responsive work-img-wid"
+                                alt="1" />
+                        </a>
+                        <div class="block_inner">
+                            <h5>Hair Dresser</h5>
+                            <h4>Branding</h4>
+                            <a class="button-view icon-angle-right" href="./images/laer-21.jpg"
+                                data-lightbox-gallery="gallery1">view</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column design work-grid show">
+                    <div class="content nivo-lightbox holder">
+                        <a href="./images/laer-22.jpg" data-lightbox-gallery="gallery1">
+                            <img src="./images/laer-22.jpg" width="470" height="400" class="img-responsive work-img-wid"
+                                alt="1" />
+                        </a>
+                        <div class="block_inner">
+                            <h5>Hair Dresser</h5>
+                            <h4>Branding</h4>
+                            <a class="button-view icon-angle-right" href="./images/laer-22.jpg"
+                                data-lightbox-gallery="gallery1">view</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="column design work-grid show">
+                    <div class="content nivo-lightbox holder">
+                        <a href="./images/laer-24.jpg" data-lightbox-gallery="gallery1">
+                            <img src="./images/laer-24.jpg" width="470" height="400" class="img-responsive work-img-wid"
+                                alt="1" />
+                        </a>
+                        <div class="block_inner">
+                            <h5>Hair Dresser</h5>
+                            <h4>Branding</h4>
+                            <a class="button-view icon-angle-right" href="./images/laer-24.jpg"
+                                data-lightbox-gallery="gallery1">view</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column design work-grid show">
+                    <div class="content nivo-lightbox holder">
+                        <a href="./images/laer-27.jpg" data-lightbox-gallery="gallery1">
+                            <img src="./images/laer-27.jpg" width="470" height="400" class="img-responsive work-img-wid"
+                                alt="1" />
+                        </a>
+                        <div class="block_inner">
+                            <h5>Hair Dresser</h5>
+                            <h4>Branding</h4>
+                            <a class="button-view icon-angle-right" href="./images/laer-27.jpg"
+                                data-lightbox-gallery="gallery1">view</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="column development work-grid">
+                    <div class="content nivo-lightbox holder">
+                        <a href="./images/laer-18.jpg" data-lightbox-gallery="gallery1">
+                            <img src="./images/laer-18.jpg" width="470" height="400" class="img-responsive work-img-wid"
+                                alt="1" />
+                        </a>
+                        <div class="block_inner">
+                            <h5>Hair Dresser</h5>
+                            <h4>Branding</h4>
+                            <a class="button-view icon-angle-right" href="./images/laer-18.jpg"
+                                data-lightbox-gallery="gallery1">view</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="column development work-grid">
+                    <div class="content nivo-lightbox holder">
+                        <a href="./images/laer-19.jpg" data-lightbox-gallery="gallery1">
+                            <img src="./images/laer-19.jpg" width="470" height="400" class="img-responsive work-img-wid"
+                                alt="1" />
+                        </a>
+                        <div class="block_inner">
+                            <h5>Hair Dresser</h5>
+                            <h4>Branding</h4>
+                            <a class="button-view icon-angle-right" href="./images/laer-19.jpg"
+                                data-lightbox-gallery="gallery1">view</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="column development work-grid">
+                    <div class="content nivo-lightbox holder">
+                        <a href="./images/laer-27.jpg" data-lightbox-gallery="gallery1">
+                            <img src="./images/laer-27.jpg" width="470" height="400" class="img-responsive work-img-wid"
+                                alt="1" />
+                        </a>
+                        <div class="block_inner">
+                            <h5>Hair Dresser</h5>
+                            <h4>Branding</h4>
+                            <a class="button-view icon-angle-right" href="./images/laer-27.jpg"
+                                data-lightbox-gallery="gallery1">view</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END GRID -->
+            </div>
+            <!-- END MAIN -->
         </div>
     </section>
 
 
 
-    <section class="do-you bg-do-you">
+    <section class="do-you clearfix">
         <div class="container">
-
-            <h3>Do you like OUR WORK so far?<br>Let's talk about YOUR PROJECT!</h3>
-            <a class="button-get" href="#">GET IN TOUCH</a>
+            <div class="row">
+                <div class="col-md-12"><h3>Do you like OUR WORK so far?<br>Let's talk about YOUR PROJECT!</h3>
+            </div>
+            <div class="col-md-12">
+                <a class="button-get" href="#">GET IN TOUCH</a>
+            </div>
+        </div>
         </div>
 
     </section>
 
 
     <section class="recent">
+        <a name="blog"></a>
         <div class="container">
             <div class="titles">
-                <h2><a name="blog"></a>Recent blog posts</h2>
+                <h2>Recent blog posts</h2>
                 <p>We offer ipsum dolor sit amet, consetetur sadipscing elitr amet
                 </p>
             </div>
             <div class="recent-blog row">
-                <div class="col">
-                    <img src="./images/home.jpg" alt="home">
+                <div class="col-lg-6">
+                    <img src="./images/home.jpg" width="450" height="350" alt="home">
                 </div>
-                <div class="col">
+                <div class="col-lg-6">
                     <div class="float">
                         <img src="./images/18_oct.png" alt="data">
                     </div>
@@ -464,10 +499,10 @@
                 </div>
             </div>
             <div class="recent-blog row">
-                <div class="col">
-                    <img src="./images/home_1.jpg" alt="home_1">
+                <div class="col-lg-6">
+                    <img src="./images/home_1.jpg" width="450" height="350" alt="home_1">
                 </div>
-                <div class="col">
+                <div class="col-lg-6">
                     <div class="float">
                         <img src="./images/18_oct.png" alt="data">
                     </div>
@@ -489,121 +524,214 @@
 
 
 
-    <section class="client bg-client">
+    <section class="client">
+        <a name="client"></a>
         <div class="container">
-            <div class="row">
-                    <a name="client"></a>
-
-                <div class="col_1"><img src="./images/client_1.png" alt="logo client"></div>
-                <div class="col_2"><img src="./images/client_2.png" alt="logo client"></div>
-                <div class="col_3"><img src="./images/client_3.png" alt="logo client"></div>
-                <div class="col_4"><img src="./images/client_4.png" alt="logo client"></div>
-                <div class="col_5"><img src="./images/client_5.png" alt="logo client"></div>
-
-            </div>
-            <span class="client-tit">
-                <p>Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.<br>
-                    Temporibus autem quibusdam et aut officiis debitis aut rerum”
-                </p>
-            </span>
-            <h5>John Doe, Google Inc.</h5>
 
 
-        </div>
+            <div class="container">
 
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="groop_client">
+                                <div class="col_1"><img src="./images/client_1.png" alt="logo client"></div>
+                                <div class="col_2"><img src="./images/client_2.png" alt="logo client"></div>
+                                <div class="col_3"><img src="./images/client_3.png" alt="logo client"></div>
+                                <div class="col_4"><img src="./images/client_4.png" alt="logo client"></div>
+                                <div class="col_5"><img src="./images/client_5.png" alt="logo client"></div>
+                            </div>
+                            <div class="client">
+                                <p class="client">Hvaing placeat facere possimus, omnis voluptas assumenda est,
+                                    omnis dolor repellendus.<br>
+                                    Temporibus autem quibusdam et aut officiis debitis aut rerum”
+                                </p>
+                                <h5>John Doe, Google Inc.</h5>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="groop_client">
+                                <div class="col_1"><img src="./images/client_1.png" alt="logo client"></div>
+                                <div class="col_2"><img src="./images/client_2.png" alt="logo client"></div>
+                                <div class="col_3"><img src="./images/client_3.png" alt="logo client"></div>
+                                <div class="col_4"><img src="./images/client_4.png" alt="logo client"></div>
+                                <div class="col_5"><img src="./images/client_5.png" alt="logo client"></div>
+                            </div>
+                            <div class="client">
+                                <p class="client">Hvaing placeat facere possimus, omnis voluptas assumenda est,
+                                    omnis dolor repellendus.<br>
+                                    Temporibus autem quibusdam et aut officiis debitis aut rerum”
+                                </p>
+                                <h5>John Doe, Google Inc.</h5>
+
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="groop_client">
+                                <div class="col_1"><img src="./images/client_1.png" alt="logo client"></div>
+                                <div class="col_2"><img src="./images/client_2.png" alt="logo client"></div>
+                                <div class="col_3"><img src="./images/client_3.png" alt="logo client"></div>
+                                <div class="col_4"><img src="./images/client_4.png" alt="logo client"></div>
+                                <div class="col_5"><img src="./images/client_5.png" alt="logo client"></div>
+                            </div>
+                            <div class="client">
+                                <p class="client">Hvaing placeat facere possimus, omnis voluptas assumenda est,
+                                    omnis dolor repellendus.<br>
+                                    Temporibus autem quibusdam et aut officiis debitis aut rerum”
+                                </p>
+                                <h5>John Doe, Google Inc.</h5>
+
+                            </div>
+                        </div>
     </section>
 
     <section class="get-in">
+       
         <div class="container">
             <div class="titles">
                 <h2>Get in touch</h2>
-                <p><a name="contact"></a>Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet
                 </p>
             </div>
-            <form>
-            <div class="row">
-                <div class=""><img src="./images/geo.png" width="" height="" alt="" align="" vspace="5" hspace="5">
-                </div>
-                <div class="col">
-                    <h6>Address</h6>
-                    <p>312, 7th Ave, New York<br>NY 101200, United States of America
-                    </p>
-                </div>
-                <div class="col">
-                    <div class="form-block clearfix"><input name="name" class="name required" type="text" placeholder=""
-                            id="name">
+            <div class="container">
+                <div id="adres">
+                    <div class="col-md-4">
+                        <div class="return">
+                            <div class="float get">
+                                <img src="./images/geo.png" width="" height="" alt="" vspace="5" hspace="5">
+                            </div>
+                            <h6>Address</h6>
+                            <p>312, 7th Ave, New York<br>NY 101200, United States of America
+                            </p>
+                        </div>
+
+                        <div class="return">
+                            <div class="float get">
+                                <img src="./images/telephon.png" width="" height="" alt="" vspace="5" hspace="5">
+                            </div>
+                            <h6>Hotline (24x7)</h6>
+                            <p>+65 0052 300, +65 88251 210 <br>+88 01723 511 340
+                            </p>
+                        </div>
+                        <div class="return">
+                            <div class="float get">
+                                <img src="./images/mail.png" width="" height="" alt="" vspace="5" hspace="5">
+                            </div>
+                            <h6>E-mail</h6>
+                            <p>shapedtheme@gmail.com<br>khalilkode@gmail.com
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="form-block clearfix"><input name="email" class="email required" type="text"
-                            placeholder="Your E-mail" id="email">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class=""><img src="./images/telephon.png" width="" height="" alt="" align="" vspace="5" hspace="5">
-                </div>
-                <div class="col">
-                    <h6>Hotline (24x7)</h6>
-                    <p>+65 0052 300, +65 88251 210 <br>+88 01723 511 340
-                    </p>
-                </div>
-                <div class="col">
-                    <div class="form-block clearfix"><input name="name" class="name required" type="text"
-                            placeholder="Your subject" id="name"></div>
-                </div>
-                <div class="col">
-                    <div class="form-block clearfix"><input name="email" class="email required" type="text"
-                            placeholder="Company name" id="email"></div>
-                </div>
-            </div>
 
+                    <div class="ro">
+                        <form id="contact-form" method="post" action="contact.php" role="form">
+                            <div class="messages"></div>
+                            <div class="controls">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_name"></label>
+                                            <input id="form_name" type="text" name="name" class="form-control"
+                                                placeholder="Please enter your firstname *" required="required"
+                                                data-error="Firstname is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_lastname"></label>
+                                            <input id="form_lastname" type="text" name="surname" class="form-control"
+                                                placeholder="Please enter your lastname *" required="required"
+                                                data-error="Lastname is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
 
-            <div class="row">
-                <div class=""><img src="./images/mail.png" width="" height="" alt="" align="" vspace="5" hspace="5">
-                </div>
-                <div class="col">
-                    <h6>E-mail</h6>
-                    <p>shapedtheme@gmail.com<br>khalilkode@gmail.com
-                    </p>
-                </div>
-                <div class="col">
-                    <div class="form-block">
-                        <textarea name="message" class="required" cols="1" rows="1" placeholder="Write your message"
-                            id="message"></textarea>
-                    </div>
-                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_email"></label>
+                                            <input id="form_email" type="email" name="email" class="form-control"
+                                                placeholder="Please enter your email *" required="required"
+                                                data-error="Valid email is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
 
-            </div>
-            <div class="form-button">
-                <div class="form-but"><a class="button_get detail-submit" href="#">Send message</a></div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_phone"></label>
+                                            <input id="form_phone" type="tel" name="phone" class="form-control"
+                                                placeholder="Please enter your phone">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                <div class="form-title">
-                    <p>* We’ll contact you as as possible. We don’t reply on Monday.</p>
-                </div>
-            </div>
-        </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="form_message"></label>
+                                            <textarea id="form_message" name="message" class="form-control"
+                                                placeholder="Message for me *" rows="4" required="required"
+                                                data-error="Please,leave us a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
 
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <!-- Replace data-sitekey with your own one, generated at https://www.google.com/recaptcha/admin -->
+                                            <div class="g-recaptcha"
+                                                data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S"></div>
+                                        </div>
+                                    </div>
 
+                                    <div class="col-md-12">
+                                        <input type="submit" class="btn-succes button_send" value="Send message">
+                                        <p>* We’ll contact you as as possible. We don’t reply on Monday.</p>
+                                    </div>
 
+                                </div>
 
-        </form>
-        </div>
+                            </div>
+
+                        </form>
+
+                    </div><!-- /.col-lg-8 col-lg-offset-2 -->
+
+                </div> <!-- /.row-->
+            </div> <!-- /.adres-->
+        </div> <!-- /.container-->
+        
     </section>
-    <footer class="foot bg-footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-8">
-                <div class="social">
-                <ul id="twitter">
-                    <li><a href="#"><img src="./images/twitter.png" width="" height="" alt="tw"></a></li>
-                    <li><a href="#"><img src="./images/twitter.png" width="" height="" alt="tw"></a></li>
-                    <li><a href="#"><img src="./images/twitter.png" width="" height="" alt="tw"></a></li>
-                    <li><a href="#"><img src="./images/twitter.png" width="" height="" alt="tw"></a></li>
-                </ul>
-                </div>
-                <center><img src="./images/line_w.png" alt=""></center>
-                <h5>© 2015 Startup, Designed by ShapedTheme</h5>
+                    <div class="social">
+                        <ul id="twitter">
+                            <li><a href="#"><img src="./images/twitter.png" width="" height="" alt="tw"></a></li>
+                            <li><a href="#"><img src="./images/twitter.png" width="" height="" alt="tw"></a></li>
+                            <li><a href="#"><img src="./images/twitter.png" width="" height="" alt="tw"></a></li>
+                            <li><a href="#"><img src="./images/twitter.png" width="" height="" alt="tw"></a></li>
+                        </ul>
+                    </div>
+                    <hr align="center" width="60" size="2" color="#ff0000" />
+                    <h5 class="">© 2015 Startup, Designed by ShapedTheme</h5>
                 </div>
             </div>
         </div>
@@ -636,6 +764,7 @@
     <script src="https://bootstraptema.ru/plugins/2017/nivo-lightbox/script.js"></script>
     <script src="js/main.js"></script>
     <script src="js/js.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
