@@ -25,9 +25,9 @@
     <title>startup</title>
 </head>
 
-<body class="header">
-    <section class="bg">
-        <header class="header">
+<body>
+    <section class="home" id="home">
+        <header>
             <div class="container">
                 <a href="#"><img src="./images/logo.png" alt="Startap" class=""></a>
                 <div class="nav_icon"></div>
@@ -44,8 +44,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" data-value="about" href="#services">Services</a> </li>
                             <li class="nav-item">
-                                <a class="nav-link " data-value="portfolio" href="#about">About</a>
-                            </li>
+                                <a class="nav-link " data-value="portfolio" href="#about">About</a></li>
                             <li class="nav-item">
                                 <a class="nav-link " data-value="blog" href="#latest">Works</a> </li>
                             <li class="nav-item">
@@ -141,7 +140,7 @@
             </div>
         </div>
     </section>
-    <section class="about bg-about">
+    <section class="about">
         <div class="container">
 
             <!-- Карусель  -->
@@ -298,7 +297,7 @@
     </section>
     <a name="latest"></a>
 
-    <section>
+    <section class="latest">
         <div class="container">
             <div class="titles mybtn">
                 <div id="myBtnContainer">
@@ -314,7 +313,7 @@
             <div class="row">
                 <div class="column brending work-grid show">
                     <div class="content nivo-lightbox holder">
-                        <a href="./images/laer-20.jpg" width="" height="" data-lightbox-gallery="gallery1">
+                        <a href="./images/laer-20.jpg" width="470" height="400" data-lightbox-gallery="gallery1">
                             <img src="./images/laer-20.jpg" width="470" height="400" class="img-responsive work-img-wid"
                                 alt="1" />
                         </a>
@@ -459,12 +458,17 @@
 
 
 
-    <section class="do-you bg-do-you">
+    <section class="do-you">
         <div class="container">
-
-            <h3>Do you like OUR WORK so far?<br>Let's talk about YOUR PROJECT!</h3>
-            <a class="button-get" href="#">GET IN TOUCH</a>
+            <div class="row">
+                <div class="col-md-12"><h3>Do you like OUR WORK so far?<br>Let's talk about YOUR PROJECT!</h3>
+            </div>
+            <div class="col-md-12">
+                <a class="button-get" href="#">GET IN TOUCH</a>
+            </div>
         </div>
+        </div>
+
 
     </section>
 
@@ -478,10 +482,10 @@
                 </p>
             </div>
             <div class="recent-blog row">
-                <div class="col">
-                    <img src="./images/home.jpg" alt="home">
+                <div class="col-lg-6">
+                    <img src="./images/home.jpg" width="450" height="350" alt="home">
                 </div>
-                <div class="col">
+                <div class="col-lg-6">
                     <div class="float">
                         <img src="./images/18_oct.png" alt="data">
                     </div>
@@ -496,10 +500,10 @@
                 </div>
             </div>
             <div class="recent-blog row">
-                <div class="col">
-                    <img src="./images/home_1.jpg" alt="home_1">
+                <div class="col-lg-6">
+                    <img src="./images/home_1.jpg" width="450" height="350" alt="home_1">
                 </div>
-                <div class="col">
+                <div class="col-lg-6">
                     <div class="float">
                         <img src="./images/18_oct.png" alt="data">
                     </div>
@@ -521,7 +525,7 @@
 
 
 
-    <section class="client bg-client">
+    <section class="client">
         <a name="client"></a>
         <div class="container">
 
@@ -596,7 +600,7 @@
 
     <section class="get-in">
        
-        <div class="container">
+        <div class="container  clearfix">
             <div class="titles">
                 <h2>Get in touch</h2>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet
@@ -715,7 +719,7 @@
         </div> <!-- /.container-->
         
     </section>
-    <footer class="foot bg-footer">
+    <footer class="footer  clearfix" id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-8">
