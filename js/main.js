@@ -1,37 +1,23 @@
-/*$(document).ready(function(){
-    $('.nivo-lightbox a').nivoLightbox({ effect: 'fade' });
-    });
+$(document).ready(function(){
+  $('.simpleimgs').slick({
+      infinite: false,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+     
+     
+      responsive: [       
+{
+breakpoint: 800,
+settings: {
+slidesToShow: 1,
+slidesToScroll: 1
 
-    $('#carouselExample').on('slide.bs.carousel', function (e) {
-
-        /*
-    
-        CC 2.0 License Iatek LLC 2018
-        Attribution required
-        
-        */
-       $('#carouselExample').on('slide.bs.carousel', function (e) {
-        var $e = $(e.relatedTarget);
-        var idx = $e.index();
-        var itemsPerSlide = 4;
-        var totalItems = $('.carousel-item').length;
-        
-        if (idx >= totalItems-(itemsPerSlide-1)) {
-            var it = itemsPerSlide - (totalItems - idx);
-            for (var i=0; i<it; i++) {
-                // append slides to end
-                if (e.direction=="left") {
-                    $('.carousel-item').eq(i).appendTo('.carousel-inner');
-                }
-                else {
-                    $('.carousel-item').eq(0).appendTo('.carousel-inner');
-                }
-            }
-        }
-    });
-    
-    /*$(document).ready(function() {
-        $('#myCarousel').carousel({
-        interval: 10
-        })
-       });*/
+}
+}
+// You can unslick at a given breakpoint now by adding:
+// settings: "unslick"
+// instead of a settings object
+]
+});
+});
